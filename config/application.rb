@@ -1,6 +1,9 @@
 require_relative "boot"
 
 require "rails/all"
+require 'rookout'
+
+::Rookout.start token: 'df307cbb85678936dec6351b4a9ff0f9c812918e9a51baa589c4c2fa8cce7a7a', labels: {env: "dev"}
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
